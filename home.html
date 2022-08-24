@@ -1,0 +1,79 @@
+<html>
+    <head>
+        <title>AUTO</title>
+        <link href="Pozadinske/icon.jpg" rel="icon"> 
+        <meta charset="UTF-8">
+        <script src="jquery-1.12.3.min.js" type="text/javascript"></script>
+        <script src="funkcije.js" type="text/javascript"></script>
+        <link href="newcss.css" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body onload="loadXML();">
+        <div id="header">
+            <div id="login">
+                <div id="labels">
+                    <div>Ime i Prezime:</div>
+                    <div>Email:</div>
+                    <div>Šifra:</div>
+                </div>
+                <div id="inputs">
+                    <div><input id="user" type="text"></div>
+                    <div><input id="mail" type="email"></div>
+                    <div><input id="pass" type="password"></div>
+                </div>
+                <div id="loginButton">
+                    <button id="logujSe" onclick="login()">Uloguj se</button>
+                </div>
+                <span id="greska"></span>
+            </div>
+            <div id="logout">
+                <span id="pozdrav"></span><br><br>
+                <button id="izlogujse" onclick="logout()">Izloguj se</button>
+            </div>
+            <div id="naslov">
+                <h1>ARSENAL <a>MOTORS</a></h1>   
+            </div>
+            <div id="menu">
+            <ul>
+                <li><a  href="home.html" >Početna</a></li>
+                <li><a href="onama.html">O nama</a></li>
+                <li><a href="ponude.html">Ponude</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+                <li><div id="vreme"></div></li>
+            </ul>
+            </div>
+            <div id="slika">
+                <h2>Birajte između naših <span>vrhunskih automobila</span><br>
+                    visokih performansi po odličnim cenama</h2>
+                <p>
+                    Da li tražite siguran, ekološki prihvatljiv automobil, sa ekonomičnom potrošnjom goriva, koji je praktičan za kretanje po gradu? Naišli ste na pogrešnu veb stranicu.Da li tražite vrhunsku mašinu sa dobrim ubrzanjem? Dobrodošli! Na pravom ste mestu.
+                </p>
+                <img src="Pozadinske/skup5.jpg">
+            </div>
+            <div id="auto">
+                <h3>ARSENAL <a>MOTORS</a></h3>
+                <div id="start">
+                <span id="start">START</span>
+               </div >
+               <div id="tabela">
+                <table class="ttt1">
+                   <tr align="right">
+                    <td colspan="2" rowspan="1" >
+                        <div style="width: 970px; "><marquee behavior="alternate" direction="right"><img src="Pozadinske/auto.jpg"></marquee></div>
+                    </td>
+                   </tr>
+               </table>
+               </div>
+               <div id="finish">
+                    <span > FINISH</span>
+               </div>
+            </div>
+        </div>
+        <div id="footer">
+            <span>Copyright &copy; Ivan Miljković 100/2018 - All Rights Reserved</span>
+        </div>
+        <script type="text/javascript">       
+            danasnjeVreme();         
+        </script>
+    </body>
+</html>
